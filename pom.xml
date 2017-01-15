@@ -31,7 +31,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aop</artifactId>
-      <version>${org.springframework.version}</version>
+      <version>4.3.5.RELEASE</version>
     </dependency>
 
     <!-- ASPECTJ DEPENDENCIES -->
@@ -39,7 +39,7 @@
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjtools</artifactId>
-      <version>${org.aspectj.verision}</version>
+      <version>1.5.4</version>
     </dependency>
 
 	</dependencies>
