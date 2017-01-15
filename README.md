@@ -6,6 +6,8 @@ Travix project offers an API which serves the merged results from 2 differents f
 
 Response served
 
+| Field                  | Description                       |
+|------------------------|-----------------------------------|
 | airline                | Name of Airline                   |
 | supplier               | Eg: CrazyAir or ToughJet          |
 | fare                   | Total price rounded to 2 decimals |
@@ -16,6 +18,8 @@ Response served
 
 Search attributes
 
+| Field              | Description                      |
+|--------------------|----------------------------------|
 | origin             | 3 letter IATA code(eg. LHR, AMS) |
 | destination        | 3 letter IATA code(eg. LHR, AMS  |
 | departureDate      | Date in ISO8601                  |
