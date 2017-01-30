@@ -38,7 +38,7 @@ public class ToughJetRestService {
 		}
 	}
 
-	public List<ToughJetResponse> getCrazyAirResponse(ToughJetRequest request)
+	public List<ToughJetResponse> getToughjetResponse(ToughJetRequest request)
 			throws GenericRestException {
 
 		URI uri = buildToughJet(GET_FLIGHT_END_POINT);
