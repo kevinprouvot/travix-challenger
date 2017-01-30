@@ -1,19 +1,18 @@
 package main.java.service.supplier;
 
-import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+
+import main.java.service.supplier.exception.GenericRestException;
+import main.java.service.supplier.model.CrazyAirErrorResponse;
+import main.java.service.supplier.model.CrazyAirRequest;
+import main.java.service.supplier.model.CrazyAirResponse;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
-import main.java.service.supplier.exception.GenericRestException;
-import main.java.service.supplier.model.CrazyAirErrorResponse;
-import main.java.service.supplier.model.CrazyAirRequest;
-import main.java.service.supplier.model.CrazyAirResponse;
 
 @Service
 public class CrazyAirRestService {
