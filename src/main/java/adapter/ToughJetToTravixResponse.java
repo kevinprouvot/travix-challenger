@@ -1,4 +1,4 @@
-package main.java.service.adapter;
+package main.java.adapter;
 
 import main.java.model.FormattedDate;
 import main.java.model.Money;

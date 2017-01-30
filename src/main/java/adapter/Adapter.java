@@ -1,4 +1,4 @@
-package main.java.service.adapter;
+package main.java.adapter;
 
 public interface Adapter<F, T> {
 

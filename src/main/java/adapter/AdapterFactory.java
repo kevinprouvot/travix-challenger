@@ -1,4 +1,4 @@
-package main.java.service.adapter;
+package main.java.adapter;
 
 import java.util.HashMap;
 import java.util.Map;

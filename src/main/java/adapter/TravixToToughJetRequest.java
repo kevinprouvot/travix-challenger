@@ -1,4 +1,4 @@
-package main.java.service.adapter;
+package main.java.adapter;
 
 import main.java.model.TravixRequest;
 import main.java.service.supplier.model.ToughJetRequest;
