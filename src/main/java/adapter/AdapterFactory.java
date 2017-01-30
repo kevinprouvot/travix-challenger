@@ -3,8 +3,16 @@ package main.java.adapter;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.stereotype.Service;
 
+import main.java.model.TravixRequest;
+import main.java.model.TravixResponse;
+import main.java.service.supplier.model.CrazyAirRequest;
+import main.java.service.supplier.model.CrazyAirResponse;
+import main.java.service.supplier.model.ToughJetRequest;
+import main.java.service.supplier.model.ToughJetResponse;
 import main.java.util.Pair;
 
 /**
@@ -17,8 +25,14 @@ public class AdapterFactory {
 
 	private Map<Pair<Class, Class>, Adapter> adapters;
 	
-	public AdapterFactory() {
-		adapters = new HashMap<>();
+	@PostConstruct
+	public void setup() {
+		adapters = new HashMap<Pair<Class,Class>, Adapter>();
+		
+		registerAdapter(CrazyAirResponse.class, TravixResponse.class, new CrazyAirToTravixResponse());
+		registerAdapter(ToughJetResponse.class, TravixResponse.class, new ToughJetToTravixResponse());
+		registerAdapter(TravixRequest.class, CrazyAirRequest.class, new TravixToCrazyAirRequest());
+		registerAdapter(TravixRequest.class, ToughJetRequest.class, new TravixToToughJetRequest());
 	}
 	
 	@SuppressWarnings("unchecked")
