@@ -3,28 +3,22 @@ package main.java.adapter;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
+
 import main.java.util.Pair;
 
 /**
  * This class will provide adaptors
  */
+
+@Service
 @SuppressWarnings("rawtypes")
 public class AdapterFactory {
 
-	private static AdapterFactory instance;
-	
 	private Map<Pair<Class, Class>, Adapter> adapters;
 	
-	private AdapterFactory() {
+	public AdapterFactory() {
 		adapters = new HashMap<>();
-	}
-	
-	public static AdapterFactory getInstance() {
-		if (instance == null) {
-			instance = new AdapterFactory();
-		}
-		
-		return instance;
 	}
 	
 	@SuppressWarnings("unchecked")
