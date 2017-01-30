@@ -7,19 +7,19 @@ public class TravixToToughJetRequest implements Adapter<TravixRequest, ToughJetR
 
 	@Override
 	public ToughJetRequest adapt(TravixRequest travixRequest) {
-		ToughJetRequest TJRequest = new ToughJetRequest();
+		ToughJetRequest tJRequest = new ToughJetRequest();
 		
-		TJRequest.setDepartureDay(travixRequest.getDepartureDate().getDayOfMonth());
-		TJRequest.setDepartureMonth(travixRequest.getDepartureDate().getMonth());
-		TJRequest.setDepartureYear(travixRequest.getDepartureDate().getYear());
-		TJRequest.setFrom(travixRequest.getOrigin());
-		TJRequest.setNumberOfAdults(travixRequest.getNumberOfPassengers());
-		TJRequest.setReturnDay(travixRequest.getReturnDate().getDayOfMonth());
-		TJRequest.setReturnMonth(travixRequest.getReturnDate().getMonth());
-		TJRequest.setReturnYear(travixRequest.getReturnDate().getYear());
-		TJRequest.setTo(travixRequest.getDestination());
+		tJRequest.setDepartureDay(travixRequest.getDepartureDate().getDayOfMonth());
+		tJRequest.setDepartureMonth(travixRequest.getDepartureDate().getMonth());
+		tJRequest.setDepartureYear(travixRequest.getDepartureDate().getYear());
+		tJRequest.setFrom(travixRequest.getOrigin());
+		tJRequest.setNumberOfAdults(travixRequest.getNumberOfPassengers());
+		tJRequest.setReturnDay(travixRequest.getReturnDate().getDayOfMonth());
+		tJRequest.setReturnMonth(travixRequest.getReturnDate().getMonth());
+		tJRequest.setReturnYear(travixRequest.getReturnDate().getYear());
+		tJRequest.setTo(travixRequest.getDestination());
 		
-		return TJRequest;
+		return tJRequest;
 	}
 	
 	

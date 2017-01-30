@@ -7,15 +7,15 @@ public class TravixToCrazyAirRequest implements Adapter<TravixRequest, CrazyAirR
 
 	@Override
 	public CrazyAirRequest adapt(TravixRequest travixRequest) {
-		CrazyAirRequest CZRequest = new CrazyAirRequest();
+		CrazyAirRequest cZRequest = new CrazyAirRequest();
 		
-		CZRequest.setDepartureDate(travixRequest.getDepartureDate().getCrazyAirRequestFormatDate());
-		CZRequest.setReturnDate(travixRequest.getReturnDate().getCrazyAirRequestFormatDate());
-		CZRequest.setDestination(travixRequest.getDestination());
-		CZRequest.setNumberOfPassengers(travixRequest.getNumberOfPassengers());
-		CZRequest.setOrigin(travixRequest.getOrigin());
+		cZRequest.setDepartureDate(travixRequest.getDepartureDate().getCrazyAirRequestFormatDate());
+		cZRequest.setReturnDate(travixRequest.getReturnDate().getCrazyAirRequestFormatDate());
+		cZRequest.setDestination(travixRequest.getDestination());
+		cZRequest.setNumberOfPassengers(travixRequest.getNumberOfPassengers());
+		cZRequest.setOrigin(travixRequest.getOrigin());
 		
-		return CZRequest;
+		return cZRequest;
 	}
 
 }
